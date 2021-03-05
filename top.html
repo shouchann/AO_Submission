@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="jquery.js"></script>
+     <!-- smooth -->
+     <script type="text/javascript" src="smooth-scroll.js"></script>
+     <script type="text/javascript">
+         // ページ内リンクのみ取得
+          var scroll = new SmoothScroll('a[href*="#"]', {
+           speed: 1000,//スクロールする速さ
+           header: '#header'//固定ヘッダーがある場合
+          });
+         </script>
+    <title>TopPage</title>
+</head>
+<div class="headermenu">
+    <ul class="menu-list">
+        <a class="menu-item" href="#1"><h2>Top</h2></a>
+        <a class="menu-item" href="#2"><h2>About</h2></a>
+        <a class="menu-item" href="#3"><h2>Works</h2></a>
+        <a class="menu-item" href="#4"><h2>Dream</h2></a>
+    </ul>
+</div>
+<body>
+    <div class="top" id="1">
+        <h1>翔ちゃんの高校在学中の活動報告</h1>
+        <div class="SNS_img">
+            <a href="https://twitter.com/honntonemui" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/shou_chan_17/?hl=ja" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/shouchann" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <h1 class="title" id="2">About</h1>
+    <div class="about">
+        <img class="main_img" src="img/icon-shochan.jpg">
+        <ul class="about_s">
+            <li><h3>式田翔一</h3></li>
+            <li><h3>17歳高校２年</h3></li>
+            <li><h3>ゲーム / 音楽鑑賞 / カラオケ</h3></li>
+        </ul>
+    </div>
+    <h1 class="title" id="3">Works</h1>
+    <div class="works">
+        <div class="top_prg">
+            <a class="top_a" href="prg.html" target="_blank"><h2>Programing</h2></a>
+        </div>
+        <div class="top_out">
+            <a class="top_a" href="out.html" target="_blank"><h2>Out of School</h2></a>
+        </div>
+    </div>
+    <h1 class="title" id="4">Dream</h1>
+    <div class="dream">
+        <ul class="dream_list">
+            <li><h3>AIで精神科医の助けになる</h3></li>
+            <li><h3>Webデザイナーって威張れるぐらい技術を持つ</h3></li>
+            <li><h3>世界に羽ばたく</h3></li>
+        </ul>
+    </div>
+    <div class="scroll-top" id="js-scroll-top">Top</div>
+    <script src="scroll_top.js"></script>
+</body>
+<footer>
+    <p>&copy;Shouichi Shikita</p>
+</footer>
+</html>

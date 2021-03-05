@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+     <!-- smooth -->
+     <script type="text/javascript" src="smooth-scroll.js"></script>
+     <script type="text/javascript">
+         // ページ内リンクのみ取得
+          var scroll = new SmoothScroll('a[href*="#"]', {
+           speed: 800,//スクロールする速さ
+           header: '#header'//固定ヘッダーがある場合
+          });
+         </script>
+    <title>Programing</title>
+</head>
+<body class="prg">
+    <div class="session_title">
+        <a href="#1"><h2 class="prg">Portfolio<br>History</h2></a>
+        <a href="#2"><h2 class="More">More<br>Web Page</h2></a>
+        <a href="#3"><h2 class="Python">Python<br>History</h2></a>
+    </div>
+    <div class="Portfolio" id="1">
+        <h1 class="title">Portfolio History</h1>
+        <div class="portfolio_img">
+            <h3>First Work</h3>
+            <a href="https://shouchann.github.io/shouchan.nhs/" target="_blank"><img src="./img/Portfolio.png" alt=""></a>
+            <h3>Second Work</h3>
+            <p>初めてレスポンシブデザインにした</p>
+            <a href="https://shouchann.github.io/Portfolio_shouchan/" target="_blank"><img src="./img/second.png" alt=""></a>
+            <h3>Third Work</h3>
+            <a href="./top.html" target="_blank"><img src="./img/now.png" alt=""></a>
+        </div>
+    </div>
+    <div class="More" id="2">
+        <h1 class="title">More Web Page</h1>
+        <div class="Izu">
+            <h3>Project-N Output</h3>
+            <a href="https://izupron.netlify.app/" target="_blank"><img src="./img/IzuWebPage.png" alt=""></a>
+        </div>
+        <div class="Karapo">
+            <h3>Karapo Website</h3>
+            <a href="https://shouchann.github.io/Karapo_site/" target="_blank"><img src="./img/Karapo_toppage.png" alt=""></a>
+        </div>
+    </div>
+    <div class="python_H" id="3">
+        <h1 class="title">Python History</h1>
+        <div class="bot_img">
+            <h3>Example</h3>
+            <img src="./img/discordbot-code.png" alt="">
+            <h3>Sorce Code</h3>
+            <img src="./img/DiscordBot.png" alt="">
+        </div>
+    </div>
+    <div class="scroll-top" id="js-scroll-top">Top</div>
+    <script src="scroll_top.js"></script>
+</body>
+<footer>
+    <a href="./top.html"><h2>Toppage</h2></a>
+    &copy;Shouichi Shikita
+</footer>
+</html>

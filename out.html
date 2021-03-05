@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+     <!-- smooth -->
+     <script type="text/javascript" src="smooth-scroll.js"></script>
+     <script type="text/javascript">
+         // ページ内リンクのみ取得
+          var scroll = new SmoothScroll('a[href*="#"]', {
+           speed: 800,//スクロールする速さ
+           header: '#header'//固定ヘッダーがある場合
+          });
+         </script>
+    <title>Concrete HighSchool</title>
+</head>
+<body class="out">
+    <div class="session_title">
+        <a href="#1"><h2>Karapo</h2></a>
+        <a href="#2"><h2>Slack Work Shop</h2></a>
+        <a href="#3"><h2>Works</h2></a>
+    </div>
+    <h1 class="title" id="1">Karapo</h1>
+    <div class="karapo_out">
+        <h3>不登校者支援団体立ち上げ</h3>
+        <h4>HP作成中</h4>
+        <img class="Karapo_img" src="./img/Karapo_toppage.png" alt="">
+    </div>
+    <h1 class="title" id="2">Slack Work Shop</h1>
+    <div class="Slack">
+        <h3>N高内でのオリエンテーション支援</h3>
+        <img class="Slack_img" src="./img/Noimage.png" alt="">
+    </div>
+    <h1 class="title" id="3">Intern</h1>
+    <div class="Intern">
+        <h3>Joyful喜一株式会社 インターン入社</h3>
+        <img class="intern_img" src="./img/joyful_img.JPG" alt="">
+    </div>
+    <div class="scroll-top" id="js-scroll-top">Top</div>
+    <script src="scroll_top.js"></script>
+</body>
+<footer>
+    <a href="./top.html"><h2>Toppage</h2></a>
+    &copy;Shouichi Shikita
+</footer>
+</html>

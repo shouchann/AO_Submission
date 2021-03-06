@@ -8,7 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
      <!-- smooth -->
      <script type="text/javascript" src="smooth-scroll.js"></script>
      <script type="text/javascript">
@@ -28,7 +31,26 @@
         <a class="menu-item" href="#4"><h2>Dream</h2></a>
     </ul>
 </div>
-<body>
+<body class="drawer drawer--right">
+    <!-- hammenu -->
+    <header role="banner" class="phone">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav" role="navigation">
+          <ul class="drawer-menu">
+            <li><a class="drawer-brand" href="#">Menu</a></li>
+            <li><a class="drawer-menu-item" href="#1">Top</a></li>
+            <li><a class="drawer-menu-item" href="#2">About</a></li>
+            <li><a class="drawer-menu-item" href="#3">Works</a></li>
+            <li><a class="drawer-menu-item" href="#4">Dream</a></li>
+        </ul>
+        </nav>
+      </header>
+      <main role="main">
+        <!-- Page content -->
+      </main>
     <div class="top" id="1">
         <h1>翔ちゃんの高校在学中の活動報告</h1>
         <div class="SNS_img">
@@ -44,6 +66,7 @@
             <li><h3>式田翔一</h3></li>
             <li><h3>17歳高校２年</h3></li>
             <li><h3>ゲーム / 音楽鑑賞 / カラオケ</h3></li>
+            <li><h3>HTML / Python</h3></li>
         </ul>
     </div>
     <h1 class="title" id="3">Works</h1>
@@ -65,6 +88,11 @@
     </div>
     <div class="scroll-top" id="js-scroll-top">Top</div>
     <script src="scroll_top.js"></script>
+    <script>
+         $(document).ready(function() {
+           $('.drawer').drawer();
+         });
+    </script>
 </body>
 <footer>
     <p>&copy;Shouichi Shikita</p>

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
      <!-- smooth -->
      <script type="text/javascript" src="smooth-scroll.js"></script>
      <script type="text/javascript">
@@ -16,7 +20,23 @@
          </script>
     <title>Programing</title>
 </head>
-<body class="prg">
+<body id="prg" class="drawer drawer--right">
+    <!-- hammenu -->
+    <header role="banner" class="phone">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav" role="navigation">
+          <ul class="drawer-menu">
+            <li><a class="drawer-brand" href="#">Menu</a></li>
+            <li><a class="drawer-menu-item" href="#1">Portfolio History</a></li>
+            <li><a class="drawer-menu-item" href="#2">More Web Page</a></li>
+            <li><a class="drawer-menu-item" href="#3">Python History</a></li>
+            <li><a class="drawer-menu-item" href="./top.html">Go Top</a></li>
+        </ul>
+        </nav>
+      </header>
     <div class="session_title">
         <a href="#1"><h2 class="prg">Portfolio<br>History</h2></a>
         <a href="#2"><h2 class="More">More<br>Web Page</h2></a>
@@ -56,6 +76,11 @@
     </div>
     <div class="scroll-top" id="js-scroll-top">Top</div>
     <script src="scroll_top.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('.drawer').drawer();
+        });
+   </script>
 </body>
 <footer>
     <a href="./top.html"><h2>Toppage</h2></a>
